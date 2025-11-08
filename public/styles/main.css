@@ -1,0 +1,34 @@
+body {
+	background-color: rgb(252, 252, 252);
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: larger;
+}
+
+a {
+	color: #0969da;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+[id="emoji-list"] {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+[id="emoji-list"] div {
+	background-color: rgb(243, 243, 243);
+	outline: 2px solid black;
+}
+
+div img{
+	max-width: 23.5%;
+}
+
+div p {
+	word-wrap: break-word;
+}
