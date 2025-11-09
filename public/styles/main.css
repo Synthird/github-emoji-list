@@ -3,14 +3,15 @@
 }
 
 body {
-	background-color: rgb(252, 252, 252);
+	background-color: rgb(19, 19, 19);
+	color: white;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 	font-size: larger;
 }
 
 a {
-	color: #0969da;
+	color: #4e91dd;
 	text-decoration: none;
 }
 
@@ -25,8 +26,8 @@ a:hover {
 }
 
 [id="emoji-list"] div {
-	background-color: rgb(243, 243, 243);
-	outline: 2px solid black;
+	background-color: rgb(73, 73, 73);
+	outline: 2px solid white;
 }
 
 div img{
