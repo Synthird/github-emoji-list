@@ -1,6 +1,6 @@
 # GitHub emoji list
 
-A list of emojis taken from the [GitHub API](ttps://docs.github.com/en/rest/emojis/emojis).
+A list of emojis taken from the [GitHub API](https://docs.github.com/en/rest/emojis/emojis).
 
 This is helpful if you are searching for emojis you want to use in your README files.
 
