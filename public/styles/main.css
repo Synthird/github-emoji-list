@@ -27,7 +27,7 @@ a:hover {
 
 [id="emoji-list"] div {
 	background-color: rgb(32, 32, 32);
-	outline: 2px solid white;
+	outline: 2px solid rgb(139, 139, 139);
 }
 
 div img{
