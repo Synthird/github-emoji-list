@@ -11,7 +11,7 @@ body {
 }
 
 a {
-	color: #75aae7;
+	color: #99c2f2;
 	text-decoration: none;
 }
 
@@ -26,7 +26,7 @@ a:hover {
 }
 
 [id="emoji-list"] div {
-	background-color: rgb(73, 73, 73);
+	background-color: rgb(32, 32, 32);
 	outline: 2px solid white;
 }
 
