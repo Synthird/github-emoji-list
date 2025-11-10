@@ -22,4 +22,5 @@ fetch("/api/emojis")
 		}
 
 		loadingText.remove();
-	});
+	})
+	.catch(err => loadingText.innerHTML = `<p>${err}</p>`);
