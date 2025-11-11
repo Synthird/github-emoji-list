@@ -38,14 +38,6 @@ a:hover {
 	border-top-right-radius: var(--rounded-corner);
 }
 
-.emoji-list div:nth-child(1933) {
-	border-bottom-left-radius: var(--rounded-corner);
-}
-
-.emoji-list div:last-child {
-	border-bottom-right-radius: var(--rounded-corner);
-}
-
 div img{
 	max-width: 23.5%;
 }
