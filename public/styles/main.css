@@ -15,13 +15,13 @@ a:hover {
 	text-decoration: underline;
 }
 
-[id="emoji-list"] {
+.emoji-list {
 	display: grid;
 	justify-content: center;
 	grid-template-columns: repeat(4, 25%);
 }
 
-[id="emoji-list"] div {
+.emoji-list div {
 	background-color: rgb(32, 32, 32);
 	outline: 2px solid rgb(139, 139, 139);
 }

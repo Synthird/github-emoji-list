@@ -1,4 +1,4 @@
-const emojiList = document.getElementById("emoji-list"),
+const emojiList = document.querySelector(".emoji-list"),
 	loadingText = document.getElementById("loading-text");
 
 fetch("/api/emojis")
