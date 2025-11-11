@@ -1,7 +1,3 @@
-:root {
-	--grid-item-width: 25%;
-}
-
 body {
 	background-color: rgb(19, 19, 19);
 	color: white;
@@ -22,7 +18,7 @@ a:hover {
 [id="emoji-list"] {
 	display: grid;
 	justify-content: center;
-	grid-template-columns: var(--grid-item-width) var(--grid-item-width) var(--grid-item-width) var(--grid-item-width);
+	grid-template-columns: repeat(4, 25%);
 }
 
 [id="emoji-list"] div {
