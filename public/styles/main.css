@@ -1,3 +1,7 @@
+:root {
+	--rounded-corner: 0.8em;
+}
+
 body {
 	background-color: rgb(19, 19, 19);
 	color: white;
@@ -24,6 +28,22 @@ a:hover {
 .emoji-list div {
 	background-color: rgb(32, 32, 32);
 	outline: 2px solid rgb(139, 139, 139);
+}
+
+.emoji-list div:first-child {
+	border-top-left-radius: var(--rounded-corner)
+}
+
+.emoji-list div:nth-child(4) {
+	border-top-right-radius: var(--rounded-corner)
+}
+
+.emoji-list div:nth-child(1933) {
+	border-bottom-left-radius: var(--rounded-corner)
+}
+
+.emoji-list div:last-child {
+	border-bottom-right-radius: var(--rounded-corner)
 }
 
 div img{
