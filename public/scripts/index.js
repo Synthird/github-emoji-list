@@ -16,7 +16,7 @@ fetch("/api/emojis")
 			emojiList.innerHTML += `
 				<div>
 					<p>${name}</p>
-					<p><img alt=${name} src=${emojis[name]}></p>
+					<p><img src=${emojis[name]}></p>
 				</div>
 			`;
 		}
