@@ -10,9 +10,7 @@ fetch("/api/emojis")
 		return res.json();
 	})
 	.then(emojis => {
-		const names = Object.keys(emojis);
-
-		for (const name of names) {
+		for (const name of Object.keys(emojis)) {
 			emojiList.innerHTML += `
 				<div>
 					<p>${name}</p>
