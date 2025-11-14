@@ -29,7 +29,6 @@ fetch("/api/emojis")
 searchBar.addEventListener("keyup", () => {
 	const searchBarValue = searchBar.value,
 		emojis = document.querySelectorAll(".emoji-name");
-	console.log(searchBarValue);
 
 	for (const emoji of emojis) {
 		const emojiContainer = emoji.parentElement;
