@@ -48,6 +48,10 @@ a:hover {
 	color: rgb(179, 179, 179);
 }
 
+::-webkit-search-cancel-button {
+	appearance: none;
+}
+
 .emoji-list {
 	display: grid;
 	justify-content: center;
