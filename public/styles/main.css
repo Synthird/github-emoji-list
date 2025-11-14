@@ -1,5 +1,6 @@
 :root {
 	--rounded-corner: 0.3em;
+	--border: 2px solid rgb(139, 139, 139);
 }
 
 body {
@@ -19,6 +20,30 @@ a:hover {
 	text-decoration: underline;
 }
 
+.search-div {
+	display: none;
+	text-align: left;
+}
+
+.search-div div {
+	margin: 0.5em auto;
+}
+
+[id="search-bar"] {
+	margin-bottom: 0.35em;
+	font-size: large;
+	width: 100%;
+	padding: 0.3em;
+	background-color: rgb(20, 20, 20);
+	border: var(--border);
+	border-radius: var(--rounded-corner);
+	color: white;
+}
+
+[id="search-bar"]:placeholder-shown {
+	color: rgb(179, 179, 179);
+}
+
 .emoji-list {
 	display: grid;
 	justify-content: center;
@@ -27,7 +52,7 @@ a:hover {
 
 .emoji-list div {
 	background-color: rgb(32, 32, 32);
-	outline: 2px solid rgb(139, 139, 139);
+	outline: var(--border);
 }
 
 .emoji-list div:first-child {
