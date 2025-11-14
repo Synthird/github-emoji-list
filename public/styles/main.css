@@ -43,10 +43,6 @@ a:hover {
 	color: white;
 }
 
-[id="search-bar"]::-webkit-search-cancel-button {
-	color: white;
-}
-
 [id="search-bar"]:placeholder-shown {
 	color: rgb(179, 179, 179);
 }
