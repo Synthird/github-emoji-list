@@ -10,6 +10,10 @@ body {
 	font-size: larger;
 }
 
+header p {
+	margin-bottom: 0;
+}
+
 a {
 	color: #99c2f2;
 	text-decoration: none;
