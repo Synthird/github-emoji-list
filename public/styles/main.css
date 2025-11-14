@@ -43,7 +43,7 @@ a:hover {
 	color: white;
 }
 
-::-webkit-search-cancel-button {
+[id="search-bar"]::-webkit-search-cancel-button {
 	color: white;
 }
 
