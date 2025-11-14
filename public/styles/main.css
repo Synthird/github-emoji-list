@@ -1,6 +1,9 @@
 :root {
 	--border: 2px solid rgb(139, 139, 139);
-	--secondary-colour: rgb(32, 32, 32);
+}
+
+[id="search-bar"], .emoji-list div {
+	background-color: rgb(32, 32, 32);
 }
 
 body {
@@ -38,7 +41,6 @@ a:hover {
 	font-size: large;
 	width: 100%;
 	padding: 0.3em;
-	background-color: var(--secondary-colour);
 	border: var(--border);
 	border-radius: 0.3em;
 	color: white;
@@ -59,7 +61,6 @@ a:hover {
 }
 
 .emoji-list div {
-	background-color: var(--secondary-colour);
 	outline: var(--border);
 }
 
