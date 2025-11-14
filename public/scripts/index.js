@@ -26,7 +26,7 @@ fetch("/api/emojis")
 	})
 	.catch(err => loadingText.innerHTML = `<p>${err}</p>`);
 
-searchBar.addEventListener("keyup", () => {
+searchBar.addEventListener("input", () => {
 	const searchBarValue = searchBar.value,
 		emojis = document.querySelectorAll(".emoji-name");
 
