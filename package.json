@@ -10,7 +10,7 @@
   },
   "keywords": ["GitHub", "Emoji", "README"],
   "author": "Synthird",
-  "license": "GPL-3.0-only",
+  "license": "AGPL-3.0-only",
   "dependencies": {
     "express": "^5.1.0",
     "octokit": "^5.0.5"
