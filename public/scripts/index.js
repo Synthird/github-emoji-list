@@ -15,7 +15,7 @@ fetch("/api/emojis")
 		for (const name of Object.keys(emojis)) {
 			emojiList.innerHTML += `
 				<div>
-					<p class="emoji-name">${name}</p>
+					<p>${name}</p>
 					<img src=${emojis[name]}>
 				</div>
 			`;
@@ -28,7 +28,7 @@ fetch("/api/emojis")
 
 searchBar.addEventListener("input", () => {
 	const searchBarValue = searchBar.value,
-		emojis = document.querySelectorAll(".emoji-name");
+		emojis = document.querySelectorAll(".emoji-list p");
 
 	for (const emoji of emojis) {
 		const emojiContainer = emoji.parentElement;
