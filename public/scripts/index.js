@@ -16,7 +16,7 @@ fetch("/api/emojis")
 			const emojiDiv = document.createElement("div"),
 				nameElement = document.createElement("p"),
 				image = document.createElement("img");
-			
+
 			nameElement.textContent = name;
 			emojiDiv.appendChild(nameElement);
 
@@ -29,7 +29,13 @@ fetch("/api/emojis")
 		loadingText.remove();
 		searchDiv.style.display = "block";
 	})
-	.catch(err => loadingText.innerHTML = `<p>${err}</p>`);
+	.catch(err => {
+		loadingText.removeChild(loadingText.firstElementChild);
+
+		const errorElement = document.createElement("p");
+		errorElement.textContent = err;
+		loadingText.appendChild(errorElement);
+	});
 
 searchBar.addEventListener("input", () => {
 	const searchBarValue = searchBar.value,
