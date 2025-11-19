@@ -11,6 +11,10 @@ export async function getEmojis(req, res) {
 
 		res.json(emojis);
 	} catch (error) {
-		res.status(404).json({ message: "Cannot get emojis" });
+		if (error.response) {
+			res.status(error.response.status).json({ message: error.response.data.message });
+		} else {
+			console.log(error);
+		}
 	}
 }
