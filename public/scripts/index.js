@@ -13,12 +13,17 @@ fetch("/api/emojis")
 	})
 	.then(emojis => {
 		for (const name of Object.keys(emojis)) {
-			emojiList.innerHTML += `
-				<div>
-					<p>${name}</p>
-					<img src=${emojis[name]}>
-				</div>
-			`;
+			const emojiDiv = document.createElement("div"),
+				nameElement = document.createElement("p"),
+				image = document.createElement("img");
+			
+			nameElement.textContent = name;
+			emojiDiv.appendChild(nameElement);
+
+			image.src = emojis[name];
+			emojiDiv.appendChild(image);
+
+			emojiList.appendChild(emojiDiv);
 		}
 
 		loadingText.remove();
