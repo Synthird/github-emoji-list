@@ -46,7 +46,7 @@ a:hover {
 	color: white;
 }
 
-[id="search-bar"]:placeholder-shown {
+:placeholder-shown {
 	color: rgb(179, 179, 179);
 }
 
