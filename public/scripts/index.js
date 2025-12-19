@@ -17,7 +17,7 @@ fetch("/api/emojis")
 				nameElement = document.createElement("p"),
 				image = document.createElement("img");
 
-			nameElement.textContent = name;
+			nameElement.textContent = `:${name}:`;
 			emojiDiv.appendChild(nameElement);
 
 			image.src = emojis[name];
