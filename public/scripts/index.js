@@ -30,7 +30,7 @@ fetch("/api/emojis")
 		searchDiv.style.display = "block";
 		loadingText.remove();
 	})
-	.catch(err => loadingText.firstElementChild.textContent = err);
+	.catch(err => loadingText.firstElementChild.textContent = err.message);
 
 searchBar.addEventListener("input", () => {
 	const searchBarValue = searchBar.value,
