@@ -72,6 +72,11 @@ img {
 	margin-right: auto;
 }
 
+img:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
 div p {
 	word-wrap: break-word;
 }

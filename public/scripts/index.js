@@ -1,7 +1,9 @@
 const emojiList = document.querySelector(".emoji-list"),
 	searchDiv = document.querySelector(".search-div"),
 	searchBar = document.getElementById("search-bar"),
-	loadingText = document.getElementById("loading-text");
+	loadingText = document.getElementById("loading-text"),
+
+	clipboard = navigator.clipboard;
 
 fetch("/api/emojis")
 	.then(res => {
@@ -32,6 +34,7 @@ fetch("/api/emojis")
 	})
 	.catch(err => loadingText.firstElementChild.textContent = err.message);
 
+// Search bar
 searchBar.addEventListener("input", () => {
 	const searchBarValue = searchBar.value,
 		emojis = document.querySelectorAll(".emoji-list p");
@@ -44,5 +47,21 @@ searchBar.addEventListener("input", () => {
 		} else {
 			emojiContainer.style.display = "block";
 		}
+	}
+});
+
+// Copy emojis
+emojiList.addEventListener("click", event => {
+	const emojiTarget = event.target;
+
+	if (emojiTarget.tagName === "IMG") {
+		const emojiDiv = emojiTarget.parentElement,
+			notifyElement = document.createElement("p");
+
+		notifyElement.textContent = "Copied emoji to clipboard!";
+		emojiDiv.appendChild(notifyElement);
+
+		clipboard.writeText(emojiDiv.firstElementChild.textContent);
+		setTimeout(() => notifyElement.remove(), 1300);
 	}
 });
