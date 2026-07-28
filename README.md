@@ -13,25 +13,18 @@ This is helpful if you are searching for emojis you want to use in your README f
 
 ## Running the site locally
 
-**What you need to have:**
-
-- [Node.js](https://nodejs.org/en) installed on your machine.
-- A [vercel](https://vercel.com/) account.
-
-**Steps:**
-
+1. Install [Node.js](https://nodejs.org/en) on your machine.
 1. Fork this repository.
 2. Clone the forked repository into your machine.
 3. Install dependencies.
 
 ```bash
-npm install -g vercel
-npm install
+npm i
 ```
 
 4. Create a GitHub personal access token. (A fine-grained one with default settings.)
 5. Copy the token.
-6. Create a ```.env``` in the root folder of your cloned repository with the following:
+6. Create a ```.env``` file in the root folder of your cloned repository with the following:
 
 ```.env
 TOKEN=PASTE-YOUR-TOKEN-HERE
@@ -40,10 +33,8 @@ TOKEN=PASTE-YOUR-TOKEN-HERE
 7. Run the site locally.
 
 ```bash
-vercel dev
+npm start
 ```
-
-8. Login to vercel if prompted.
 
 ## License
 
