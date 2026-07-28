@@ -62,5 +62,6 @@ emojiList.addEventListener("click", event => {
 		emojiDiv.appendChild(notifyElement);
 
 		clipboard.writeText(emojiDiv.firstElementChild.textContent);
+		setTimeout(() => notifyElement.remove(), 1300);
 	}
 });
