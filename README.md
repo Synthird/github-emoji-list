@@ -24,7 +24,7 @@ This is helpful if you are searching for emojis you want to use in your README f
 2. Clone the forked repository into your machine.
 3. Install dependencies.
 
-```shell
+```bash
 npm install -g vercel
 npm install
 ```
@@ -39,7 +39,7 @@ TOKEN=PASTE-YOUR-TOKEN-HERE
 
 7. Run the site locally.
 
-```shell
+```bash
 vercel dev
 ```
 
