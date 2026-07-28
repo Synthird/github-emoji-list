@@ -55,6 +55,12 @@ emojiList.addEventListener("click", event => {
 	const emojiTarget = event.target;
 
 	if (emojiTarget.tagName === "IMG") {
-		clipboard.writeText(emojiTarget.parentElement.firstElementChild.textContent);
+		const emojiDiv = emojiTarget.parentElement,
+			notifyElement = document.createElement("p");
+
+		notifyElement.textContent = "Copied emoji to clipboard!";
+		emojiDiv.appendChild(notifyElement);
+
+		clipboard.writeText(emojiDiv.firstElementChild.textContent);
 	}
 });
