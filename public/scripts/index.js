@@ -2,7 +2,7 @@ const emojiList = document.querySelector(".emoji-list"),
 	searchDiv = document.querySelector(".search-div"),
 	searchBar = document.getElementById("search-bar"),
 	loadingText = document.getElementById("loading-text"),
-	
+
 	clipboard = navigator.clipboard;
 
 fetch("/api/emojis")
