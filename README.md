@@ -14,23 +14,23 @@ This is helpful if you are searching for emojis you want to use in your README f
 ## Running the site locally
 
 1. Install [Node.js](https://nodejs.org/en) on your machine.
-1. Fork this repository.
-2. Clone the forked repository into your machine.
-3. Install dependencies.
+2. Fork this repository.
+3. Clone the forked repository into your machine.
+4. Install dependencies.
 
 ```bash
 npm i
 ```
 
-4. Create a GitHub personal access token. (A fine-grained one with default settings.)
-5. Copy the token.
-6. Create a ```.env``` file in the root folder of your cloned repository with the following:
+5. Create a GitHub personal access token. (A fine-grained one with default settings.)
+6. Copy the token.
+7. Create a ```.env``` file in the root folder of your cloned repository with the following:
 
 ```.env
 TOKEN=PASTE-YOUR-TOKEN-HERE
 ```
 
-7. Run the site locally.
+8. Run the site locally.
 
 ```bash
 npm start
