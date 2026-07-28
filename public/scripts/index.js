@@ -1,7 +1,9 @@
 const emojiList = document.querySelector(".emoji-list"),
 	searchDiv = document.querySelector(".search-div"),
 	searchBar = document.getElementById("search-bar"),
-	loadingText = document.getElementById("loading-text");
+	loadingText = document.getElementById("loading-text"),
+	
+	clipboard = navigator.clipboard;
 
 fetch("/api/emojis")
 	.then(res => {
@@ -50,7 +52,9 @@ searchBar.addEventListener("input", () => {
 
 // Copy emojis
 emojiList.addEventListener("click", event => {
-	if (event.target.tagName === "IMG") {
-		console.log("Image");
+	const emojiTarget = event.target;
+
+	if (emojiTarget.tagName === "IMG") {
+		clipboard.writeText(emojiTarget.parentElement.firstElementChild.textContent);
 	}
 });
