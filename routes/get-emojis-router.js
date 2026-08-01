@@ -9,8 +9,8 @@ const router = express.Router();
 
 router.get("/", async (_, res) => {
 	try {
-		const result = await octokit.request("GET /emojis");
-		res.json(result.data);
+		const emojis = await octokit.request("GET /emojis");
+		res.json(emojis.data);
 	} catch (error) {
 		if (error.response) {
 			res.status(error.response.status).json({ message: error.response.data.message });
