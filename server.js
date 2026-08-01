@@ -8,4 +8,4 @@ app.use("/api/emojis", getEmojisRouter);
 app.use(express.static("public"));
 app.listen(8080, () => console.log("View site at: http://localhost:8080"));
 
-export default app;
+module.exports = app;
