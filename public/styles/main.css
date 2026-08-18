@@ -80,3 +80,9 @@ img:hover {
 div p {
 	word-wrap: break-word;
 }
+
+@media (scripting: none) {
+	[id="loading-text"] {
+		display: none;
+	}
+}
